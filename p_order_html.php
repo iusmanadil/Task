@@ -155,12 +155,12 @@ $(document).ready(function() {
 	    if(@$_SESSION["user"]["user_anrede"] == "2") { echo " checked=\"checked\""; }
 	    echo " /> ".lang("global_anrede_2")."</td></tr>";
 	 ?>
-  	<div>
-  		<div class="usman_testing">
+  	<div class="git-my">
+  		<div>
 	  		<?php echo $lable["user_vorname"]; ?>,
 	  		<?php echo $lable["user_name"]; ?>
 	  	</div>
-	  	<div class="baba-tullo">
+	  	<div>
 	  		<?php echo $input["user_vorname"]; ?>,
 	  		<?php echo $input["user_name"]; ?>
 	  	</div>
