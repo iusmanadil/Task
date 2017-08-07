@@ -155,7 +155,7 @@ $(document).ready(function() {
 	    if(@$_SESSION["user"]["user_anrede"] == "2") { echo " checked=\"checked\""; }
 	    echo " /> ".lang("global_anrede_2")."</td></tr>";
 	 ?>
-  	<div class="git-my">
+  	<div>
   		<div>
 	  		<?php echo $lable["user_vorname"]; ?>,
 	  		<?php echo $lable["user_name"]; ?>
