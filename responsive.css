@@ -1,6 +1,14 @@
-.test { border: 2px solid gold; }
+.form-group {
+	border: solid green;
+}
 
-.label-text { font-size: 1.3em; }
+.bor { 
+	border: 2px solid gold; 
+}
+
+.label-text { 
+	font-size: 1.3em; 
+}
 
 div.nifty {
   background: none !important;  

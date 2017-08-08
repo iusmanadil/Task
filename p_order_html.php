@@ -157,14 +157,14 @@ $(document).ready(function() {
 	    echo " /> ".lang("global_anrede_2")."</td></tr>";
 	 ?>
   	<div class="form-group">
-  		<div class="col-sm-4">
+  		<div class="col-sm-4 bor">
 	  		<label class="control-label label-text" for="vorname">Vorname</label>,
 	  		<label class="control-label label-text" for="name">Name</label>
 	  	</div>
-	  	<div class="col-sm-3 col-sm-offset-2">
+	  	<div class="col-sm-3 col-sm-offset-2 bor">
 	  		<input type="text" name="vorname" id="vorname" placeholder="Enter Vorname" class="form-control">
 	  	</div>
-	  	<div class="col-sm-3">
+	  	<div class="col-sm-3 bor">
 	  		<input type="text" name="name" id="name" placeholder="Enter Name" class="form-control">
 		</div>
 	</div>  
