@@ -6,6 +6,10 @@
 	/*border: 2px solid gold; */
 }
 
+.form-group {
+	display: block !important;
+}
+
 .label-text { 
 	font-size: 1.3em; 
 }
