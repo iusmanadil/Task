@@ -170,10 +170,10 @@ $(document).ready(function() {
 	</div>  
   	<div class="form-group">
 		<div class="col-sm-4">
-			<label class="control-label label-text" for="strabe"><?php echo $lable["user_strasse"]; ?></label>
+			<label class="control-label label-text" for="strabe">Straße, Hausnummer</label>
 		</div>,
 		<div class="col-sm-3 col-sm-offset-1">
-			<input type="text" name="strabe" id="strabe" placeholder="Enter Strabe" class="form-controlr">
+			<input type="text" name="strabe" id="strabe" placeholder="Enter Strabe" class="form-control">
 		</div>
 	</div>
   	<div>
