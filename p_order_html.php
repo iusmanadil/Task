@@ -162,10 +162,10 @@ $(document).ready(function() {
 	  		<label class="control-label label-text" for="name">Name</label>
 	  	</div>
 	  	<div class="col-sm-3 col-sm-offset-1">
-	  		<input type="text" name="vorname" id="vorname" placeholder="Enter Vorname" class="form-control">
+	  		<input type="text" name="vorname" id="vorname" class="form-control">
 	  	</div>
 	  	<div class="col-sm-3">
-	  		<input type="text" name="name" id="name" placeholder="Enter Name" class="form-control">
+	  		<input type="text" name="name" id="name" class="form-control">
 		</div>
 	</div>  
   	<div class="form-group">
@@ -173,26 +173,28 @@ $(document).ready(function() {
 			<label class="control-label label-text" for="strabe">Straße, Hausnummer</label>
 		</div>,
 		<div class="col-sm-3 col-sm-offset-1">
-			<input type="text" name="strabe" id="strabe" placeholder="Enter Strabe" class="form-control">
+			<input type="text" name="strabe" id="strabe" class="form-control">
 		</div>
 	</div>
-  	<div>
-		<div>  
-		  	<?php echo $lable["user_plz"]; ?>,
-		  	<?php echo $lable["user_ort"]; ?>
+  	<div class="form-group">
+  		<div class="col-sm-4">
+	  		<label class="control-label label-text" for="postcode">Postleitzahl</label>,
+	  		<label class="control-label label-text" for="residence">Wohnort</label>
 	  	</div>
-	  	<div>
-	  		<?php echo $input["user_plz"]; ?>,
-	  		<label class="user_ort_input"><?php echo $input["user_ort"]; ?></label>
-	  </div>
-	</div>
-  	<div>
-	  	<div>
-	  		<?php echo $lable["user_land"]; ?>  			
+	  	<div class="col-sm-3 col-sm-offset-1">
+	  		<input type="text" name="postcode" id="postcode" class="form-control">
 	  	</div>
-	  	<div>
-	  		<?php echo $input["user_land"]; ?>
-	  	</div>
+	  	<div class="col-sm-3">
+	  		<input type="text" name="residence" id="residence" class="form-control">
+		</div>
+	</div> 
+  	<div class="form-group">
+		<div class="col-sm-4">
+			<label class="control-label label-text" for="land">Land</label>
+		</div>
+		<div class="col-sm-3 col-sm-offset-1">
+			<input type="text" name="land" id="land" class="form-control">
+		</div>
 	</div>
   	<div>
   		<div>
