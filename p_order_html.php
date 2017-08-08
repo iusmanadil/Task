@@ -1,5 +1,6 @@
 <?php include("./classes/submit_once.php"); ?>
 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
 <script language="JavaScript">//<!--
 					function mitte(w,h,url,n) {
@@ -155,15 +156,17 @@ $(document).ready(function() {
 	    if(@$_SESSION["user"]["user_anrede"] == "2") { echo " checked=\"checked\""; }
 	    echo " /> ".lang("global_anrede_2")."</td></tr>";
 	 ?>
-  	<div>
-  		<div>
-	  		<?php echo $lable["user_vorname"]; ?>,
-	  		<?php echo $lable["user_name"]; ?>
+  	<div class="form-group">
+  		<div class="col-sm-2">
+	  		<label class="control-label" for="vorname"><?php echo $lable["user_vorname"]; ?>,</label>
+	  		<label class="control-label" for="name"><?php echo $lable["user_name"]; ?></label>
 	  	</div>
-	  	<div>
-	  		<?php echo $input["user_vorname"]; ?>,
-	  		<?php echo $input["user_name"]; ?>
+	  	<div class="col-sm-4">
+	  		<input type="text" name="vorname" id="vorname" placeholder="Enter Vorname" class="form-control"><?php echo $input["user_vorname"]; ?>,
 	  	</div>
+	  	<div class="col-sm-4">
+	  		<input type="text" name="name" id="name" placeholder="Enter Name" class="form-control"><?php echo $input["user_name"]; ?>
+		</div>
 	</div>  
   	<div>
 		<div>
