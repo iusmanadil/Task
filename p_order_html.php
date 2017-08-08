@@ -157,22 +157,23 @@ $(document).ready(function() {
 	    echo " /> ".lang("global_anrede_2")."</td></tr>";
 	 ?>
   	<div class="form-group">
-  		<div class="col-sm-2">
-	  		<label class="control-label" for="vorname"><?php echo $lable["user_vorname"]; ?>,</label>
-	  		<label class="control-label" for="name"><?php echo $lable["user_name"]; ?></label>
+  		<div class="col-sm-4">
+	  		<label class="control-label label-text" for="vorname">Vorname</label>,
+	  		<label class="control-label label-text" for="name">Name</label>
 	  	</div>
-	  	<div class="col-sm-4">
-	  		<input type="text" name="vorname" id="vorname" placeholder="Enter Vorname" class="form-control"><?php echo $input["user_vorname"]; ?>,
+	  	<div class="col-sm-3 col-sm-offset-2">
+	  		<input type="text" name="vorname" id="vorname" placeholder="Enter Vorname" class="form-control">
 	  	</div>
-	  	<div class="col-sm-4">
-	  		<input type="text" name="name" id="name" placeholder="Enter Name" class="form-control"><?php echo $input["user_name"]; ?>
+	  	<div class="col-sm-3">
+	  		<input type="text" name="name" id="name" placeholder="Enter Name" class="form-control">
 		</div>
 	</div>  
-  	<div>
-		<div>
-			<?php echo $lable["user_strasse"]; ?>
+  	<div class="form-group">
+		<div class="col-sm-4">
+			<label class="control-label" for="strabe"><?php echo $lable["user_strasse"]; ?></label>
 		</div>,
-		<div>
+		<div class="col-sm-3 col-sm-offset-2">
+			<input type="text" name="strabe" id="strabe" placeholder="Enter Strabe" class="form-controlr">
 			<?php echo $input["user_strasse"]; ?>
 		</div>
 	</div>

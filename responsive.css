@@ -1,5 +1,7 @@
 .test { border: 2px solid gold; }
 
+.label-text { font-size: 1.3em; }
+
 div.nifty {
   background: none !important;  
 }
