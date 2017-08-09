@@ -141,11 +141,11 @@ $(document).ready(function() {
 </div>
 
 <?php } ?>
-<form action="order.html#OK" method="post" id="Form" onsubmit="submitonce(this)">
+<form action="order.html#OK" method="post" class="form-horizontal" id="Form" onsubmit="submitonce(this)">
 <input type="hidden" name="buchen" value="yes">
 <input type="hidden" name="p" value="order">
 <?php round_box_top(lang("order_kundendaten")); ?>
-<form class="form-horizontal">
+<div>
    <?php
       echo "<tr><td>";
       echo $lable["user_anrede"];
@@ -227,7 +227,7 @@ $(document).ready(function() {
 		</div>
 		<div></div>
   	</div>
-</form>
+</div>
 <?php round_box_bottom();
 
     	// ####################################################################################
