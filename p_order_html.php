@@ -171,7 +171,7 @@ $(document).ready(function() {
   	<div class="form-group">
 		<div class="col-sm-4">
 			<label class="control-label label-text" for="strabe">Straße, Hausnummer</label>
-		</div>,
+		</div>
 		<div class="col-sm-3 col-sm-offset-1">
 			<input type="text" name="strabe" id="strabe" class="form-control">
 		</div>
