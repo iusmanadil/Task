@@ -157,58 +157,58 @@ $(document).ready(function() {
 	    echo " /> ".lang("global_anrede_2")."</td></tr>";
 	 ?>
   	<div class="form-group">
-  		<div class="col-sm-3">
+  		<div class="col-xs-3">
 	  		<label class="control-label label-text" for="vorname">Vorname</label>,
 	  		<label class="control-label label-text" for="name">Name</label>
 	  	</div>
-	  	<div class="col-sm-3 col-sm-offset-1">
+	  	<div class="col-xs-3 col-xs-offset-1">
 	  		<input type="text" name="vorname" id="vorname" class="form-control">
 	  	</div>
-	  	<div class="col-sm-3">
+	  	<div class="col-xs-3">
 	  		<input type="text" name="name" id="name" class="form-control">
 		</div>
 	</div>  
   	<div class="form-group">
-		<div class="col-sm-3">
+		<div class="col-xs-3">
 			<label class="control-label label-text" for="strabe">Straße, Hausnummer</label>
 		</div>
-		<div class="col-sm-3 col-sm-offset-1">
+		<div class="col-xs-3 col-xs-offset-1">
 			<input type="text" name="strabe" id="strabe" class="form-control">
 		</div>
 	</div>
   	<div class="form-group">
-  		<div class="col-sm-3">
+  		<div class="col-xs-3">
 	  		<label class="control-label label-text" for="postcode">Postleitzahl</label>,
 	  		<label class="control-label label-text" for="residence">Wohnort</label>
 	  	</div>
-	  	<div class="col-sm-3 col-sm-offset-1">
+	  	<div class="col-xs-3 col-xs-offset-1">
 	  		<input type="text" name="postcode" id="postcode" class="form-control">
 	  	</div>
-	  	<div class="col-sm-3">
+	  	<div class="col-xs-3">
 	  		<input type="text" name="residence" id="residence" class="form-control">
 		</div>
 	</div> 
   	<div class="form-group">
-		<div class="col-sm-3">
+		<div class="col-xs-3">
 			<label class="control-label label-text" for="land">Land</label>
 		</div>
-		<div class="col-sm-3 col-sm-offset-1">
+		<div class="col-xs-3 col-xs-offset-1">
 			<input type="text" name="land" id="land" class="form-control">
 		</div>
 	</div>
   	<div class="form-group">
-		<div class="col-sm-3">
+		<div class="col-xs-3">
 			<label class="control-label label-text" for="phone">Telefonnummer</label>
 		</div>
-		<div class="col-sm-3 col-sm-offset-1">
+		<div class="col-xs-3 col-xs-offset-1">
 			<input type="text" name="phone" id="phone" class="form-control">
 		</div>
 	</div>
 	<div class="form-group">
-		<div class="col-sm-3">
+		<div class="col-xs-3">
 			<label class="control-label label-text" for="mobile">Handy-Nr. (wichtig)</label>
 		</div>
-		<div class="col-sm-3 col-sm-offset-1">
+		<div class="col-xs-3 col-xs-offset-1">
 			<input type="text" name="mobile" id="mobile" class="form-control">
 			<?php echo infotooltip(lang("order_handy_help")); ?>
 			<div class="small"><?php echo lang("order_hinweis_handy"); ?></div>
@@ -224,18 +224,18 @@ $(document).ready(function() {
   		</div>
 	</div> -->
   	<div class="form-group">
-		<div class="col-sm-3">
+		<div class="col-xs-3">
 			<label class="control-label label-text" for="email">E-Mail</label>
 		</div>
-		<div class="col-sm-3 col-sm-offset-1">
+		<div class="col-xs-3 col-xs-offset-1">
 			<input type="email" name="email" id="email" class="form-control">
 		</div>
 	</div>
   	<div class="form-group">
-  		<div class="col-sm-3">
+  		<div class="col-xs-3">
 			<label class="control-label label-text">Geburtsdatum</label>			
   		</div>
-		<div class="col-sm-1 col-sm-offset-1">
+		<div class="col-xs-1 col-xs-offset-1">
 			<select name="f_geb_t" class="form-control">
 				<option value="1">1</option>
 				<option value="2">2</option>
@@ -270,7 +270,7 @@ $(document).ready(function() {
 				<option value="31">31</option>
 			</select>
 		</div>
-		<div class="col-sm-1">
+		<div class="col-xs-1">
 			<select name="f_geb_m" class="form-control">
 				<option value="1">1</option>
 				<option value="2">2</option>
@@ -286,7 +286,7 @@ $(document).ready(function() {
 				<option value="12">12</option>
 			</select>
 		</div>
-		<div class="col-sm-2">
+		<div class="col-xs-2">
 			<input type="text" class="form-control" name="f_geb_j" value="" size="4">
 		</div>
   	</div>
