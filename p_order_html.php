@@ -298,25 +298,78 @@ $(document).ready(function() {
     	// ####################################################################################
    $buchung_display = new buchung();
    $buchung_display->load_session($_SESSION["buchung"]);
-   round_box_top(lang("buchung_mietdaten"));
+   round_box_top(lang("buchung_mietdaten"));  
+?>
 
-   echo '<table border="0" cellpadding="0" width="100%">
-    <tr>
-      <td width="10%">';
-   echo '<img src="./grafik/newcars/' . $_SESSION["car"]["cars_pic"] . '">';
-   echo '</td>
-   <td>';
-//   echo '<p align="center"><h2>' . lang("global_kategorie") .': '. $_SESSION["car"]["cars_cat"] . '</h2>';
-//   echo '<h2>' . $_SESSION["car"]["cars_titel"] . '<small>(' . lang("global_oder_vergleichbar") . ')</small></h2></p>';
+<div class="row">
+	<div class="col-sm-6">
+		<img src="../grafik/newcars/207cc.gif" class="image-responsive" alt="Car Pic">
+	</div>
+	<div class="col-sm-6">
+     	<div class="row">
+       	<div class="col-sm-3">
+         	<strong>Kat:</strong>
+       	</div>
+       	<div class="col-sm-7 col-sm-offset-2 t-r">
+          	X2 Peugeot 207 Cabrio o.ä.
+       	</div>
+       	<div class="col-sm-3">
+         	<strong>Ort:</strong>
+       	</div>
+       	<div class="col-sm-7 col-sm-offset-2 t-r">
+          	Spanien Mallorca Flughafen<br>
+          	(Flughafenbüro)
+       	</div>
+       	<div class="col-sm-3">
+         	<strong>Übernahme::</strong>
+       	</div>
+       	<div class="col-sm-7 col-sm-offset-2 t-r">
+          	2017-08-13 10:00 Uhr
+       	</div>
+       	<div class="col-sm-3">
+         	<strong>Abgabe:</strong>
+       	</div>
+       	<div class="col-sm-7 col-sm-offset-2 t-r">
+          	2017-08-16 10:00 Uhr
+       	</div>
+       	<div class="col-sm-3">
+         	<strong>Abgabeort:</strong>
+       	</div>
+       	<div class="col-sm-7 col-sm-offset-2 t-r">
+          	Spanien Mallorca Flughafen
+       	</div>
+       	<div class="col-sm-3">
+         	<strong>Tage:</strong>
+       	</div>
+       	<div class="col-sm-7 col-sm-offset-2 t-r">
+          	3 Tage
+       	</div>
+       	<div class="col-sm-3">
+         	<strong>Tagespreis:</strong>
+       	</div>
+       	<div class="col-sm-7 col-sm-offset-2 t-r">
+          	63,70 €
+       	</div>
+       	<div class="col-sm-3">
+         	<strong>Zwischensumme:</strong>
+       	</div>
+       	<div class="col-sm-7 col-sm-offset-2 t-r">
+          	191,10 €
+       	</div>
+       	<div class="col-sm-10">
+         	<strong>Extras:</strong>
+       	</div>
+       	<div class="col-sm-3">
+         	<strong>Endpreis:</strong>
+       	</div>
+       	<div class="col-sm-7 col-sm-offset-2 t-r">
+          	191,10 €
+       	</div>
+		</div>
+	</div>
 
-   $buchung_display->show_mietdaten2("width=\"\" ");
-   echo   '</td>
-    </tr>
-  </table>';
 
-
-   echo "<hr noshade=\"noshade\" style=\"height:1px;\" />";
-   ?>
+<?php echo "<hr noshade=\"noshade\" style=\"height:1px;\" />"; ?>
   <table border="0" style="border:0px solid #ffe265;">
     <?php
       for ($i=1; $i<=$fahrer; $i++){
