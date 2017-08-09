@@ -198,10 +198,20 @@ $(document).ready(function() {
 	</div>
   	<div class="form-group">
 		<div class="col-sm-3">
+			<label class="control-label label-text" for="phone">Telefonnummer</label>
+		</div>
+		<div class="col-sm-3 col-sm-offset-1">
+			<input type="text" name="phone" id="phone" class="form-control">
+		</div>
+	</div>
+	<div class="form-group">
+		<div class="col-sm-3">
 			<label class="control-label label-text" for="mobile">Handy-Nr. (wichtig)</label>
 		</div>
 		<div class="col-sm-3 col-sm-offset-1">
 			<input type="text" name="mobile" id="mobile" class="form-control">
+			<?php echo infotooltip(lang("order_handy_help")); ?>
+			<div class="small"><?php echo lang("order_hinweis_handy"); ?></div>
 		</div>
 	</div>
   	<div>
@@ -213,12 +223,12 @@ $(document).ready(function() {
   			<div class="small"><?php echo lang("order_hinweis_handy"); ?></div>
   		</div>
 	</div>
-  	<div>
-  		<div>
-  			<?php echo $lable["user_email"]; ?>
-  		</div>
-  		<div>
-			<?php echo $input["user_email"]; ?>
+  	<div class="form-group">
+		<div class="col-sm-3">
+			<label class="control-label label-text" for="email">E-Mail</label>
+		</div>
+		<div class="col-sm-3 col-sm-offset-1">
+			<input type="email" name="email" id="email" class="form-control">
 		</div>
 	</div>
   	<div>
