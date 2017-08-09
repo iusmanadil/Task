@@ -157,7 +157,7 @@ $(document).ready(function() {
 	    echo " /> ".lang("global_anrede_2")."</td></tr>";
 	 ?>
   	<div class="form-group">
-  		<div class="col-sm-4">
+  		<div class="col-sm-3">
 	  		<label class="control-label label-text" for="vorname">Vorname</label>,
 	  		<label class="control-label label-text" for="name">Name</label>
 	  	</div>
@@ -169,7 +169,7 @@ $(document).ready(function() {
 		</div>
 	</div>  
   	<div class="form-group">
-		<div class="col-sm-4">
+		<div class="col-sm-3">
 			<label class="control-label label-text" for="strabe">Straße, Hausnummer</label>
 		</div>
 		<div class="col-sm-3 col-sm-offset-1">
@@ -177,7 +177,7 @@ $(document).ready(function() {
 		</div>
 	</div>
   	<div class="form-group">
-  		<div class="col-sm-4">
+  		<div class="col-sm-3">
 	  		<label class="control-label label-text" for="postcode">Postleitzahl</label>,
 	  		<label class="control-label label-text" for="residence">Wohnort</label>
 	  	</div>
@@ -189,19 +189,19 @@ $(document).ready(function() {
 		</div>
 	</div> 
   	<div class="form-group">
-		<div class="col-sm-4">
+		<div class="col-sm-3">
 			<label class="control-label label-text" for="land">Land</label>
 		</div>
 		<div class="col-sm-3 col-sm-offset-1">
 			<input type="text" name="land" id="land" class="form-control">
 		</div>
 	</div>
-  	<div>
-  		<div>
-  			<?php echo $lable["user_telefon"]; ?>	
+  	<div class="form-group">
+		<div class="col-sm-3">
+			<label class="control-label label-text" for="mobile">Handy-Nr. (wichtig)</label>
 		</div>
-		<div>
-			<?php echo $input["user_telefon"]; ?>
+		<div class="col-sm-3 col-sm-offset-1">
+			<input type="text" name="mobile" id="mobile" class="form-control">
 		</div>
 	</div>
   	<div>
