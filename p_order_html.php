@@ -214,8 +214,10 @@ $(document).ready(function() {
 		<span class="span-tooltip">
 			<img src="../grafik/i.gif">
 		</span>
+		<div class="col-sm-6 col-sm-offset-4">
+			<div class="small"><?php echo lang("order_hinweis_handy"); ?></div>		
+		</div>
 		<!-- <?php //echo infotooltip(lang("order_handy_help")); ?> -->
-		<!-- <div class="small"><?php echo lang("order_hinweis_handy"); ?></div> -->
 	</div>
   	<!-- <div class="form-group">
   		<div class="col-sm-3">

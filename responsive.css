@@ -26,7 +26,11 @@
 }
 
 .img-container { text-align: center; }
+
+.span-tooltip { display: inline-block; }
+
 .t-r { text-align: right; }
+
 
 .tooltip-img {
 	border: 1px solid cyan;
@@ -39,15 +43,15 @@
 	.t-c{ text-align: center; }
 }
 
-@media screen and (max-width: 768px) and (min-width: 595px) {
+@media (max-width: 768px) {
 	.span-tooltip {
-		display: inline-block;
 		margin-top: 5px;
 		margin-left: 18px;
 	}
-
-
 }
+
+
+
 
 
 div.nifty {
