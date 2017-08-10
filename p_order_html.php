@@ -394,7 +394,15 @@ $(document).ready(function() {
       	<div class="col-sm-7 col-sm-offset-1">
 	      	<textarea class="form-control" name="b_bemerkungen" rows="5" id="comment"></textarea>
       	</div>
-    </div>
+    	</div>
+    	<div class="form-group">
+	      <div class="col-sm-2">
+		      <label class="control-label label-text" for="flugnummer">Flugnummer</label>
+	      </div>
+	      <div class="col-sm-6 col-sm-offset-1">
+		      <input type="text" name="b_flug_nr" id="flugnummer" class="form-control">
+	      </div>
+      </div>
  	</div>
 </div>
 

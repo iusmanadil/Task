@@ -15,7 +15,7 @@
 }
 
 
-.form-control {
+input.form-control {
     height: 28px !important;
     padding: 6px 6px !important;
     font-size: 13px !important;
