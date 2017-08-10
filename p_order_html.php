@@ -217,17 +217,7 @@ $(document).ready(function() {
 		<div class="col-sm-8 col-sm-offset-4">
 			<div class="small"><?php echo lang("order_hinweis_handy"); ?></div>		
 		</div>
-		<!-- <?php //echo infotooltip(lang("order_handy_help")); ?> -->
 	</div>
-  	<!-- <div class="form-group">
-  		<div class="col-sm-3">
-  			<?php echo $lable["user_handy"]; ?>
-  		</div>
-  		<div class="col-sm-3 col-sm-offset-1">
-  			<?php echo $input["user_handy"]." "; infotooltip(lang("order_handy_help"));?><br/>
-  			<div class="small"><?php echo lang("order_hinweis_handy"); ?></div>
-  		</div>
-	</div> -->
   	<div class="form-group">
 		<div class="col-sm-3 t-c">
 			<label class="control-label label-text" for="email">E-Mail</label>
@@ -383,13 +373,13 @@ $(document).ready(function() {
 	      <div class="col-sm-2">
 		      <label class="control-label label-text" for="fahrer">Fahrer</label>
 	      </div>
-	      <div class="col-sm-6 col-sm-offset-1">
+	      <div class="col-sm-7 col-sm-offset-1">
 		      <input type="text" name="f_fahrer_1" value="(Mieter/Mieterin)" id="fahrer" class="form-control">
 	      </div>
       </div>
       <div class="form-group">
       	<div class="col-sm-2">
-	      	<label for="comment">Comment:</label>
+	      	<label for="comment">Bemerkungen:</label>
       	</div>
       	<div class="col-sm-7 col-sm-offset-1">
 	      	<textarea class="form-control" name="b_bemerkungen" rows="5" id="comment"></textarea>
@@ -399,10 +389,32 @@ $(document).ready(function() {
 	      <div class="col-sm-2">
 		      <label class="control-label label-text" for="flugnummer">Flugnummer</label>
 	      </div>
-	      <div class="col-sm-6 col-sm-offset-1">
+	      <div class="col-sm-7 col-sm-offset-1">
 		      <input type="text" name="b_flug_nr" id="flugnummer" class="form-control">
 	      </div>
       </div>
+      <div class="form-group">
+	  		<div class="col-sm-2 t-c">
+				<label class="control-label label-text">Geburtsdatum</label>			
+	  		</div>
+			<div class="col-sm-7 col-sm-offset-1">
+				<select name="b_umfrage" class="form-control">
+					<option value="bitte wählen... ">bitte wählen... </option>
+					<option value="Empfehlung">Empfehlung</option>
+					<option value="Suchmaschine">Suchmaschine</option>
+					<option value="Online Werbung">Online Werbung</option>
+					<option value="Print Werbung">Print Werbung</option>
+					<option value="Bereits Kunde">Bereits Kunde</option>
+					<option value="Sonstiges">Sonstiges</option>
+				</select>
+			</div>
+			<div class="col-sm-8 col-sm-offset-3">
+				<div class="small">
+					<input type="checkbox" name="mietbedingungen" id="miet"><a href="javascript:mitte(840,600,'index.php?p=bedingungen','name')">Mietbedingungen</a>
+					<label for="miet"> gelesen und akzeptiert</label>
+				</div>		
+		</div>
+		</div>
  	</div>
 </div>
 
