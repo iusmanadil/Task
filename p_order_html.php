@@ -157,11 +157,11 @@ $(document).ready(function() {
 	    echo " /> ".lang("global_anrede_2")."</td></tr>";
 	 ?>
   	<div class="form-group">
-  		<div class="col-sm-3">
+  		<div class="col-sm-3 t-c">
 	  		<label class="control-label label-text" for="vorname">Vorname</label>,
 	  		<label class="control-label label-text" for="name">Name</label>
 	  	</div>
-	  	<div class="col-sm-3 col-sm-offset-1">
+	  	<div class="col-sm-3 col-sm-offset-1 input-m-b">
 	  		<input type="text" name="vorname" id="vorname" class="form-control">
 	  	</div>
 	  	<div class="col-sm-3">
@@ -169,7 +169,7 @@ $(document).ready(function() {
 		</div>
 	</div>  
   	<div class="form-group">
-		<div class="col-sm-3">
+		<div class="col-sm-3 t-c">
 			<label class="control-label label-text" for="strabe">Straße, Hausnummer</label>
 		</div>
 		<div class="col-sm-3 col-sm-offset-1">
@@ -177,11 +177,11 @@ $(document).ready(function() {
 		</div>
 	</div>
   	<div class="form-group">
-  		<div class="col-sm-3">
+  		<div class="col-sm-3 t-c">
 	  		<label class="control-label label-text" for="postcode">Postleitzahl</label>,
 	  		<label class="control-label label-text" for="residence">Wohnort</label>
 	  	</div>
-	  	<div class="col-sm-3 col-sm-offset-1">
+	  	<div class="col-sm-3 col-sm-offset-1 input-m-b">
 	  		<input type="text" name="postcode" id="postcode" class="form-control">
 	  	</div>
 	  	<div class="col-sm-3">
@@ -189,7 +189,7 @@ $(document).ready(function() {
 		</div>
 	</div> 
   	<div class="form-group">
-		<div class="col-sm-3">
+		<div class="col-sm-3 t-c">
 			<label class="control-label label-text" for="land">Land</label>
 		</div>
 		<div class="col-sm-3 col-sm-offset-1">
@@ -197,7 +197,7 @@ $(document).ready(function() {
 		</div>
 	</div>
   	<div class="form-group">
-		<div class="col-sm-3">
+		<div class="col-sm-3 t-c">
 			<label class="control-label label-text" for="phone">Telefonnummer</label>
 		</div>
 		<div class="col-sm-3 col-sm-offset-1">
@@ -205,7 +205,7 @@ $(document).ready(function() {
 		</div>
 	</div>
 	<div class="form-group">
-		<div class="col-sm-3">
+		<div class="col-sm-3 t-c">
 			<label class="control-label label-text" for="mobile">Handy-Nr. (wichtig)</label>
 		</div>
 		<div class="col-sm-3 col-sm-offset-1">
@@ -224,7 +224,7 @@ $(document).ready(function() {
   		</div>
 	</div> -->
   	<div class="form-group">
-		<div class="col-sm-3">
+		<div class="col-sm-3 t-c">
 			<label class="control-label label-text" for="email">E-Mail</label>
 		</div>
 		<div class="col-sm-3 col-sm-offset-1">
