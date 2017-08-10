@@ -210,9 +210,12 @@ $(document).ready(function() {
 		</div>
 		<div class="col-sm-3 col-sm-offset-1">
 			<input type="text" name="user_handy" id="mobile" class="form-control">
-			<?php echo infotooltip(lang("order_handy_help")); ?>
-			<div class="small"><?php echo lang("order_hinweis_handy"); ?></div>
 		</div>
+		<span class="span-tooltip">
+			<img src="../grafik/i.gif">
+		</span>
+		<!-- <?php //echo infotooltip(lang("order_handy_help")); ?> -->
+		<!-- <div class="small"><?php echo lang("order_hinweis_handy"); ?></div> -->
 	</div>
   	<!-- <div class="form-group">
   		<div class="col-sm-3">
