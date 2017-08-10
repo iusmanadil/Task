@@ -212,9 +212,9 @@ $(document).ready(function() {
 			<input type="text" name="user_handy" id="mobile" class="form-control">
 		</div>
 		<span class="span-tooltip">
-			<img src="../grafik/i.gif">
+			<img src="../grafik/i.gif" style="cursor:help;" onmouseover="ddrivetip('Bitte geben Sie Ihre Handynummer ohne Bindestriche und Leerzeichen ein, mit der Ladeskennzahl beginnend. Beispiel: 491721111111.', 300)" onmouseout="hideddrivetip()" width="16" height="16" border="0">
 		</span>
-		<div class="col-sm-6 col-sm-offset-4">
+		<div class="col-sm-8 col-sm-offset-4">
 			<div class="small"><?php echo lang("order_hinweis_handy"); ?></div>		
 		</div>
 		<!-- <?php //echo infotooltip(lang("order_handy_help")); ?> -->
@@ -372,42 +372,34 @@ $(document).ready(function() {
        	</div>
 		</div>
 	</div>
+</div>
 
 
 <?php echo "<hr noshade=\"noshade\" style=\"height:1px;\" />"; ?>
-  <table border="0" style="border:0px solid #ffe265;">
-    <?php
-      for ($i=1; $i<=$fahrer; $i++){
-       ?>
-  		<tr><td><?php
-  		  echo $lable["b_fahrer_".$i]; ?></td><td><?php echo $input["b_fahrer_".$i];
-  		  if ($i==1) infotooltip(lang("order_b_bemerkungen_help"));
-  		?></td></tr>
-     <?php } ?>
-  	<tr><td><?php echo $lable["b_bemerkungen"]; ?></td><td><?php echo $input["b_bemerkungen"]; ?></td></tr>
-  	<?php
-  	if ($_SESSION["daten"]["zustellungsart"]=="airport"){ ?>
-  		<tr><td><?php echo $lable["b_flug_nr"]; ?></td><td><div><?php echo $input["b_flug_nr"]; infotooltip(lang("order_b_flug_nr_help")); ?></div>
-  	<?php } else {echo "<tr><td><input type=\"hidden\" name=\"b_flug_nr\" value =\"-\" />";}	?>
-  	</td></tr>
-  	<!--<tr><td><?php echo $lable["b_uanschrift"]; ?></td><td><?php echo $input["b_uanschrift"]; ?></td></tr>
-  	<?php
-  	if ($_SESSION["daten"]["zustellungsart"]=="hotel"){ ?>
-  		<tr><td><?php echo $lable["b_hotel"]; ?></td><td><?php echo $input["b_hotel"]; ?>
-  	<?php } else echo "<input type=\"hidden\" name=\"b_hotel\" value =\"-\" />";	?>
-  	</td></tr> -->
-  	<?php if (!isset($_SESSION["_backup"])) { ?>
-  	<tr><td><?php echo $lable["b_umfrage"]; ?></td><td><?php echo $input["b_umfrage"]; ?></td></tr>
-  <?php } else {
-  				echo "<input type=\"hidden\" name=\"b_umfrage\" value=\"agentur\">";
-        }
-  ?>
- 		<tr><td><?php echo $lable["mietbedingungen"]; ?></td><td><input type="checkbox" name="mietbedingungen" <?php if (@$_POST["mietbedingungen"]=="on") echo "checked=\"checked\""; ?> />
-  	<a href="javascript:mitte(840,600,'index.php?p=bedingungen','name')"><?=lang("order_mietbedingungen"); ?></a>
-  	<?=lang("order_gelesen"); ?>
-  	</td></tr>
 
-  </table>
+<div class="row">
+ 	<div class="col-sm-6">
+     	<div class="form-group">
+	      <div class="col-sm-2">
+		      <label class="control-label label-text" for="fahrer">Fahrer</label>
+	      </div>
+	      <div class="col-sm-6 col-sm-offset-1">
+		      <input type="text" name="f_fahrer_1" value="(Mieter/Mieterin)" id="fahrer" class="form-control">
+	      </div>
+      </div>
+      <div class="form-group">
+      	<div class="col-sm-2">
+	      	<label for="comment">Comment:</label>
+      	</div>
+      	<div class="col-sm-7 col-sm-offset-1">
+	      	<textarea class="form-control" name="b_bemerkungen" rows="5" id="comment"></textarea>
+      	</div>
+    </div>
+ 	</div>
+</div>
+
+
+
 <?php
    round_box_bottom();
 

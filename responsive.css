@@ -39,7 +39,7 @@
 }
 
 @media (max-width: 768px) {
-	.input-m-b { margin-bottom: 7px; }
+	.input-m-b { margin-bottom: 10px; }
 	.t-c{ text-align: center; }
 }
 
