@@ -25,12 +25,12 @@
     color: #555;
 }
 
-
+.img-container { text-align: center; }
 .t-r { text-align: right; }
 
 
 @media (max-width: 768px) {
-	.input-m-b { margin-bottom: 10px; }
+	.input-m-b { margin-bottom: 7px; }
 	.t-c{ text-align: center; }
 }
 

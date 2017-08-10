@@ -162,10 +162,10 @@ $(document).ready(function() {
 	  		<label class="control-label label-text" for="name">Name</label>
 	  	</div>
 	  	<div class="col-sm-3 col-sm-offset-1 input-m-b">
-	  		<input type="text" name="vorname" id="vorname" class="form-control">
+	  		<input type="text" name="user_vorname" id="vorname" class="form-control">
 	  	</div>
 	  	<div class="col-sm-3">
-	  		<input type="text" name="name" id="name" class="form-control">
+	  		<input type="text" name="user_name" id="name" class="form-control">
 		</div>
 	</div>  
   	<div class="form-group">
@@ -173,7 +173,7 @@ $(document).ready(function() {
 			<label class="control-label label-text" for="strabe">Straße, Hausnummer</label>
 		</div>
 		<div class="col-sm-3 col-sm-offset-1">
-			<input type="text" name="strabe" id="strabe" class="form-control">
+			<input type="text" name="user_strasse" id="strabe" class="form-control">
 		</div>
 	</div>
   	<div class="form-group">
@@ -182,10 +182,10 @@ $(document).ready(function() {
 	  		<label class="control-label label-text" for="residence">Wohnort</label>
 	  	</div>
 	  	<div class="col-sm-3 col-sm-offset-1 input-m-b">
-	  		<input type="text" name="postcode" id="postcode" class="form-control">
+	  		<input type="text" name="user_plz" id="postcode" class="form-control">
 	  	</div>
 	  	<div class="col-sm-3">
-	  		<input type="text" name="residence" id="residence" class="form-control">
+	  		<input type="text" name="user_ort" id="residence" class="form-control">
 		</div>
 	</div> 
   	<div class="form-group">
@@ -193,7 +193,7 @@ $(document).ready(function() {
 			<label class="control-label label-text" for="land">Land</label>
 		</div>
 		<div class="col-sm-3 col-sm-offset-1">
-			<input type="text" name="land" id="land" class="form-control">
+			<input type="text" name="user_land" id="land" class="form-control">
 		</div>
 	</div>
   	<div class="form-group">
@@ -201,7 +201,7 @@ $(document).ready(function() {
 			<label class="control-label label-text" for="phone">Telefonnummer</label>
 		</div>
 		<div class="col-sm-3 col-sm-offset-1">
-			<input type="text" name="phone" id="phone" class="form-control">
+			<input type="text" name="user_telefon" id="phone" class="form-control">
 		</div>
 	</div>
 	<div class="form-group">
@@ -209,7 +209,7 @@ $(document).ready(function() {
 			<label class="control-label label-text" for="mobile">Handy-Nr. (wichtig)</label>
 		</div>
 		<div class="col-sm-3 col-sm-offset-1">
-			<input type="text" name="mobile" id="mobile" class="form-control">
+			<input type="text" name="user_handy" id="mobile" class="form-control">
 			<?php echo infotooltip(lang("order_handy_help")); ?>
 			<div class="small"><?php echo lang("order_hinweis_handy"); ?></div>
 		</div>
@@ -228,11 +228,11 @@ $(document).ready(function() {
 			<label class="control-label label-text" for="email">E-Mail</label>
 		</div>
 		<div class="col-sm-3 col-sm-offset-1">
-			<input type="email" name="email" id="email" class="form-control">
+			<input type="email" name="user_email" id="email" class="form-control">
 		</div>
 	</div>
   	<div class="form-group">
-  		<div class="col-sm-3">
+  		<div class="col-sm-3 t-c">
 			<label class="control-label label-text">Geburtsdatum</label>			
   		</div>
 		<div class="col-sm-1 col-sm-offset-1">
@@ -302,7 +302,7 @@ $(document).ready(function() {
 ?>
 
 <div class="row">
-	<div class="col-sm-6">
+	<div class="col-sm-6 img-container">
 		<img src="../grafik/newcars/207cc.gif" class="image-responsive" alt="Car Pic">
 	</div>
 	<div class="col-sm-6">
