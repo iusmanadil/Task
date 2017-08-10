@@ -16,12 +16,12 @@
 
 
 .form-control {
-    display: block;
-    width: 100%;
-    height: 28px;
+    height: 28px !important;
     padding: 6px 12px;
     font-size: 14px;
-    line-height: 1.12857143;
+    line-height: 1.12857143 !important;
+    border: 1px solid #9C9C9C;
+    border-radius: 0;
     color: #555;
 }
 
