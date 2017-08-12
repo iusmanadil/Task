@@ -145,7 +145,7 @@ $(document).ready(function() {
 <input type="hidden" name="buchen" value="yes">
 <input type="hidden" name="p" value="order">
 <?php round_box_top(lang("order_kundendaten")); ?>
-<div>
+<div class="padd">
    <?php
       echo "<tr><td>";
       echo $lable["user_anrede"];
@@ -158,14 +158,14 @@ $(document).ready(function() {
 	 ?>
   	<div class="form-group">
   		<div class="col-sm-3 t-c">
-	  		<label class="control-label label-text" for="vorname">Vornameqwa</label>,
+	  		<label class="control-label label-text" for="vorname">Vorname</label>,
 	  		<label class="control-label label-text" for="name">Name</label>
 	  	</div>
 	  	<div class="col-sm-3 col-sm-offset-1 input-m-b">
-	  		<input type="text" name="user_vorname" id="vorname" class="form-control">
+	  		<input type="text" name="user_vorname" id="vorname" class="form-control" required>
 	  	</div>
 	  	<div class="col-sm-3">
-	  		<input type="text" name="user_name" id="name" class="form-control">
+	  		<input type="text" name="user_name" id="name" class="form-control" required>
 		</div>
 	</div>  
   	<div class="form-group">
@@ -173,7 +173,7 @@ $(document).ready(function() {
 			<label class="control-label label-text" for="strabe">Straße, Hausnummer</label>
 		</div>
 		<div class="col-sm-3 col-sm-offset-1">
-			<input type="text" name="user_strasse" id="strabe" class="form-control">
+			<input type="text" name="user_strasse" id="strabe" class="form-control" required>
 		</div>
 	</div>
   	<div class="form-group">
@@ -182,10 +182,10 @@ $(document).ready(function() {
 	  		<label class="control-label label-text" for="residence">Wohnort</label>
 	  	</div>
 	  	<div class="col-sm-3 col-sm-offset-1 input-m-b">
-	  		<input type="text" name="user_plz" id="postcode" class="form-control">
+	  		<input type="text" name="user_plz" id="postcode" class="form-control" required>
 	  	</div>
 	  	<div class="col-sm-3">
-	  		<input type="text" name="user_ort" id="residence" class="form-control">
+	  		<input type="text" name="user_ort" id="residence" class="form-control" required>
 		</div>
 	</div> 
   	<div class="form-group">
@@ -193,7 +193,7 @@ $(document).ready(function() {
 			<label class="control-label label-text" for="land">Land</label>
 		</div>
 		<div class="col-sm-3 col-sm-offset-1">
-			<input type="text" name="user_land" id="land" class="form-control">
+			<input type="text" name="user_land" id="land" class="form-control" required>
 		</div>
 	</div>
   	<div class="form-group">
@@ -201,7 +201,7 @@ $(document).ready(function() {
 			<label class="control-label label-text" for="phone">Telefonnummer</label>
 		</div>
 		<div class="col-sm-3 col-sm-offset-1">
-			<input type="text" name="user_telefon" id="phone" class="form-control">
+			<input type="number" name="user_telefon" id="phone" class="form-control" required>
 		</div>
 	</div>
 	<div class="form-group">
@@ -209,7 +209,7 @@ $(document).ready(function() {
 			<label class="control-label label-text" for="mobile">Handy-Nr. (wichtig)</label>
 		</div>
 		<div class="col-sm-3 col-sm-offset-1">
-			<input type="text" name="user_handy" id="mobile" class="form-control">
+			<input type="number" name="user_handy" id="mobile" class="form-control" required>
 		</div>
 		<span class="span-tooltip">
 			<img src="../grafik/i.gif" style="cursor:help;" onmouseover="ddrivetip('Bitte geben Sie Ihre Handynummer ohne Bindestriche und Leerzeichen ein, mit der Ladeskennzahl beginnend. Beispiel: 491721111111.', 300)" onmouseout="hideddrivetip()" width="16" height="16" border="0">
@@ -223,14 +223,14 @@ $(document).ready(function() {
 			<label class="control-label label-text" for="email">E-Mail</label>
 		</div>
 		<div class="col-sm-3 col-sm-offset-1">
-			<input type="email" name="user_email" id="email" class="form-control">
+			<input type="email" name="user_email" id="email" class="form-control" required>
 		</div>
 	</div>
   	<div class="form-group">
   		<div class="col-sm-3 t-c">
 			<label class="control-label label-text">Geburtsdatum</label>			
   		</div>
-		<div class="col-sm-1 col-sm-offset-1">
+		<div class="col-sm-1 col-sm-offset-1 input-m-b">
 			<select name="f_geb_t" class="form-control">
 				<option value="1">1</option>
 				<option value="2">2</option>
@@ -265,7 +265,7 @@ $(document).ready(function() {
 				<option value="31">31</option>
 			</select>
 		</div>
-		<div class="col-sm-1">
+		<div class="col-sm-1 input-m-b">
 			<select name="f_geb_m" class="form-control">
 				<option value="1">1</option>
 				<option value="2">2</option>
@@ -282,7 +282,7 @@ $(document).ready(function() {
 			</select>
 		</div>
 		<div class="col-sm-2">
-			<input type="text" class="form-control" name="f_geb_j" value="" size="4">
+			<input type="number" class="form-control" name="f_geb_j" value="" size="4" required>
 		</div>
   	</div>
 </div>
@@ -296,68 +296,69 @@ $(document).ready(function() {
    round_box_top(lang("buchung_mietdaten"));  
 ?>
 
-<div class="row">
+<div class="row padd">
 	<div class="col-sm-6 img-container">
 		<img src="../grafik/newcars/207cc.gif" class="image-responsive" alt="Car Pic">
 	</div>
 	<div class="col-sm-6">
      	<div class="row">
-       	<div class="col-sm-3">
+       	<div class="col-xs-3 bor">
          	<strong>Kat:</strong>
        	</div>
-       	<div class="col-sm-7 col-sm-offset-2 t-r">
-          	X2 Peugeot 207 Cabrio o.ä.
+       	<div class="col-xs-7 col-xs-offset-2 t-r bor">
+          	X2 <br>
+          	Peugeot 207 Cabrio o.ä.
        	</div>
-       	<div class="col-sm-3">
+       	<div class="col-xs-3">
          	<strong>Ort:</strong>
        	</div>
-       	<div class="col-sm-7 col-sm-offset-2 t-r">
+       	<div class="col-xs-7 col-xs-offset-2 t-r">
           	Spanien Mallorca Flughafen<br>
           	(Flughafenbüro)
        	</div>
-       	<div class="col-sm-3">
+       	<div class="col-xs-3">
          	<strong>Übernahme::</strong>
        	</div>
-       	<div class="col-sm-7 col-sm-offset-2 t-r">
+       	<div class="col-xs-7 col-xs-offset-2 t-r">
           	2017-08-13 10:00 Uhr
        	</div>
-       	<div class="col-sm-3">
+       	<div class="col-xs-3">
          	<strong>Abgabe:</strong>
        	</div>
-       	<div class="col-sm-7 col-sm-offset-2 t-r">
+       	<div class="col-xs-7 col-xs-offset-2 t-r">
           	2017-08-16 10:00 Uhr
        	</div>
-       	<div class="col-sm-3">
+       	<div class="col-xs-3">
          	<strong>Abgabeort:</strong>
        	</div>
-       	<div class="col-sm-7 col-sm-offset-2 t-r">
+       	<div class="col-xs-7 col-xs-offset-2 t-r">
           	Spanien Mallorca Flughafen
        	</div>
-       	<div class="col-sm-3">
+       	<div class="col-xs-3">
          	<strong>Tage:</strong>
        	</div>
-       	<div class="col-sm-7 col-sm-offset-2 t-r">
+       	<div class="col-xs-7 col-xs-offset-2 t-r">
           	3 Tage
        	</div>
-       	<div class="col-sm-3">
+       	<div class="col-xs-3">
          	<strong>Tagespreis:</strong>
        	</div>
-       	<div class="col-sm-7 col-sm-offset-2 t-r">
+       	<div class="col-xs-7 col-xs-offset-2 t-r">
           	63,70 €
        	</div>
-       	<div class="col-sm-3">
+       	<div class="col-xs-3">
          	<strong>Zwischensumme:</strong>
        	</div>
-       	<div class="col-sm-7 col-sm-offset-2 t-r">
+       	<div class="col-xs-7 col-xs-offset-2 t-r">
           	191,10 €
        	</div>
-       	<div class="col-sm-10">
+       	<div class="col-xs-10">
          	<strong>Extras:</strong>
        	</div>
-       	<div class="col-sm-3">
+       	<div class="col-xs-3">
          	<strong>Endpreis:</strong>
        	</div>
-       	<div class="col-sm-7 col-sm-offset-2 t-r">
+       	<div class="col-xs-7 col-xs-offset-2 t-r">
           	191,10 €
        	</div>
 		</div>
@@ -367,10 +368,10 @@ $(document).ready(function() {
 
 <?php echo "<hr noshade=\"noshade\" style=\"height:1px;\" />"; ?>
 
-<div class="row">
+<div class="row padd">
  	<div class="col-sm-6">
      	<div class="form-group">
-	      <div class="col-sm-2">
+	      <div class="col-sm-2 t-c">
 		      <label class="control-label label-text" for="fahrer">Fahrer</label>
 	      </div>
 	      <div class="col-sm-7 col-sm-offset-1">
@@ -378,15 +379,15 @@ $(document).ready(function() {
 	      </div>
       </div>
       <div class="form-group">
-      	<div class="col-sm-2">
-	      	<label for="comment">Bemerkungen:</label>
+      	<div class="col-sm-2 t-c">
+	      	<label class="label-text" for="comment">Bemerkungen:</label>
       	</div>
       	<div class="col-sm-7 col-sm-offset-1">
 	      	<textarea class="form-control" name="b_bemerkungen" rows="5" id="comment"></textarea>
       	</div>
     	</div>
     	<div class="form-group">
-	      <div class="col-sm-2">
+	      <div class="col-sm-2 t-c">
 		      <label class="control-label label-text" for="flugnummer">Flugnummer</label>
 	      </div>
 	      <div class="col-sm-7 col-sm-offset-1">
@@ -413,7 +414,7 @@ $(document).ready(function() {
 					<input type="checkbox" name="mietbedingungen" id="miet"><a href="javascript:mitte(840,600,'index.php?p=bedingungen','name')">Mietbedingungen</a>
 					<label for="miet"> gelesen und akzeptiert</label>
 				</div>		
-		</div>
+			</div>
 		</div>
  	</div>
 </div>

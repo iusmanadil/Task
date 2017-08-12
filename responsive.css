@@ -3,7 +3,12 @@
 }
 
 .bor { 
-	/*border: 2px solid gold; */
+	border: 1px solid gold; 
+}
+
+.padd {
+	/*border: solid cyan;*/
+	padding: 5px;
 }
 
 .form-group {
