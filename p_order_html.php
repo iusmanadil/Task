@@ -158,7 +158,7 @@ $(document).ready(function() {
 	 ?>
   	<div class="form-group">
   		<div class="col-sm-3 t-c">
-	  		<label class="control-label label-text" for="vorname">Vorname</label>,
+	  		<label class="control-label label-text" for="vorname">Vornameqwa</label>,
 	  		<label class="control-label label-text" for="name">Name</label>
 	  	</div>
 	  	<div class="col-sm-3 col-sm-offset-1 input-m-b">
