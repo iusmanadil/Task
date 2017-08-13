@@ -1,23 +1,9 @@
-.bor-g {
-	/*border: solid green;*/
-}
 
-.bor { 
-	border: 1px solid gold; 
-}
+.padd {	padding: 5px; }
 
-.padd {
-	/*border: solid cyan;*/
-	padding: 5px;
-}
+.nifty .boxcontent h1 { font-size: 1.4em; }
 
-.form-group {
-	/*display: block !important;*/
-}
-
-.label-text { 
-	font-size: 1.2em; 
-}
+.label-text { font-size: 1.2em; }
 
 
 input.form-control {
@@ -42,6 +28,8 @@ input.form-control {
 	padding-right: 0 !important;
 	padding-left: 0 !important;
 }
+
+.font-l { font-size: 1.2em; }
 
 @media (max-width: 768px) {
 	.input-m-b { margin-bottom: 10px; }

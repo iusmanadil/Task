@@ -300,12 +300,12 @@ $(document).ready(function() {
 	<div class="col-sm-6 img-container">
 		<img src="../grafik/newcars/207cc.gif" class="image-responsive" alt="Car Pic">
 	</div>
-	<div class="col-sm-6">
+	<div class="col-sm-6 font-l">
      	<div class="row">
-       	<div class="col-xs-3 bor">
+       	<div class="col-xs-3">
          	<strong>Kat:</strong>
        	</div>
-       	<div class="col-xs-7 col-xs-offset-2 t-r bor">
+       	<div class="col-xs-7 col-xs-offset-2 t-r">
           	X2 <br>
           	Peugeot 207 Cabrio o.ä.
        	</div>
@@ -377,6 +377,9 @@ $(document).ready(function() {
 	      <div class="col-sm-7 col-sm-offset-1">
 		      <input type="text" name="f_fahrer_1" value="(Mieter/Mieterin)" id="fahrer" class="form-control">
 	      </div>
+	      <span class="span-tooltip">
+				<img src="./grafik/i.gif" style="cursor:help;" onmouseover="ddrivetip('Bitte geben Sie die Namen der Fahrer an. Falls Sie selbst das Fahrzeug steuern wollen, können Sie die Angabe (Mieter/Mieterin) unverändert lassen.', 300)" onmouseout="hideddrivetip()" width="16" height="16" border="0">
+			</span>
       </div>
       <div class="form-group">
       	<div class="col-sm-2 t-c">
@@ -393,6 +396,9 @@ $(document).ready(function() {
 	      <div class="col-sm-7 col-sm-offset-1">
 		      <input type="text" name="b_flug_nr" id="flugnummer" class="form-control">
 	      </div>
+	      <span class="span-tooltip">
+	      	<img src="./grafik/i.gif" style="cursor:help;" onmouseover="ddrivetip('Falls nicht bekannt, schreiben Sie bitte `walkin` in das Feld.', 310)" onmouseout="hideddrivetip()" width="16" height="16" border="0">
+	      </span>
       </div>
       <div class="form-group">
 	  		<div class="col-sm-2 t-c">
